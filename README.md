@@ -16,5 +16,5 @@ This repository contains the terraform configuration files to setup the fomantic
      - [fomantic-ui.dev](root/fomantic/dns/fomantic-ui.dev.tf)
      - [fomantic-ui.org](root/fomantic/dns/fomantic-ui.org.tf)
  - [Semantic](root/semantic) 
-   - [dns](root/fomantic/dns)
+   - [dns](root/semantic/dns)
      - [semantic-ui.dev](root/fomantic/dns/semantic-ui.dev.tf)
