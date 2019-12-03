@@ -1,5 +1,5 @@
 resource "digitalocean_domain" "fomantic-ui-dev" {
-  name = "fomantic.dev"
+  name = "fomantic-ui.dev"
 }
 
 resource "digitalocean_record" "fomantic-ui-dev-apex" {
