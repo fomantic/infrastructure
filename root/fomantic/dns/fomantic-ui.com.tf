@@ -37,7 +37,7 @@ resource "digitalocean_record" "fomantic-ui-com-mail-aspmx" {
   type      = "MX"
   name      = "@"
   priority  = "1"
-  value     = "ASPMX.L.GOOGLE.COM"
+  value     = "ASPMX.L.GOOGLE.COM."
 }
 
 resource "digitalocean_record" "fomantic-ui-com-mail-alt1" {
@@ -45,7 +45,7 @@ resource "digitalocean_record" "fomantic-ui-com-mail-alt1" {
   type      = "MX"
   name      = "@"
   priority  = "5"
-  value     = "ALT1.ASPMX.L.GOOGLE.COM"
+  value     = "ALT1.ASPMX.L.GOOGLE.COM."
 }
 
 resource "digitalocean_record" "fomantic-ui-com-mail-alt2" {
@@ -53,7 +53,7 @@ resource "digitalocean_record" "fomantic-ui-com-mail-alt2" {
   type      = "MX"
   name      = "@"
   priority  = "5"
-  value     = "ALT2.ASPMX.L.GOOGLE.COM"
+  value     = "ALT2.ASPMX.L.GOOGLE.COM."
 }
 
 resource "digitalocean_record" "fomantic-ui-com-mail-alt3" {
@@ -61,7 +61,7 @@ resource "digitalocean_record" "fomantic-ui-com-mail-alt3" {
   type      = "MX"
   name      = "@"
   priority  = "10"
-  value     = "ALT3.ASPMX.L.GOOGLE.COM"
+  value     = "ALT3.ASPMX.L.GOOGLE.COM."
 }
 
 resource "digitalocean_record" "fomantic-ui-com-mail-alt4" {
@@ -69,5 +69,5 @@ resource "digitalocean_record" "fomantic-ui-com-mail-alt4" {
   type      = "MX"
   name      = "@"
   priority  = "10"
-  value     = "ALT4.ASPMX.L.GOOGLE.COM"
+  value     = "ALT4.ASPMX.L.GOOGLE.COM."
 }
