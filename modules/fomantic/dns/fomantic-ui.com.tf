@@ -3,32 +3,12 @@ resource "digitalocean_domain" "fomantic-ui-com" {
 }
 
 # Documentation (GitHub Pages)
-resource "digitalocean_record" "fomantic-ui-com-apex1" {
+resource "digitalocean_record" "fomantic-ui-com-apex" {
+  for_each = toset(var.gh_pages_ip_address)
   domain  = digitalocean_domain.fomantic-ui-com.name
   type    = "A"
   name    = "@"
-  value   = "185.199.108.153"
-}
-
-resource "digitalocean_record" "fomantic-ui-com-apex2" {
-  domain  = digitalocean_domain.fomantic-ui-com.name
-  type    = "A"
-  name    = "@"
-  value   = "185.199.109.153"
-}
-
-resource "digitalocean_record" "fomantic-ui-com-apex3" {
-  domain  = digitalocean_domain.fomantic-ui-com.name
-  type    = "A"
-  name    = "@"
-  value   = "185.199.110.153"
-}
-
-resource "digitalocean_record" "fomantic-ui-com-apex4" {
-  domain  = digitalocean_domain.fomantic-ui-com.name
-  type    = "A"
-  name    = "@"
-  value   = "185.199.111.153"
+  value   = each.value
 }
 
 # Mail

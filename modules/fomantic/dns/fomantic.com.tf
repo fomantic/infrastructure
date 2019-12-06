@@ -6,5 +6,5 @@ resource "digitalocean_record" "fomantic-com-apex" {
   domain  = digitalocean_domain.fomantic-com.name
   type    = "A"
   name    = "@"
-  value   = "178.128.35.93"
+  value   = var.redirector_ip
 }
