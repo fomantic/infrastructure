@@ -101,6 +101,17 @@ locals {
       has_projects  = true
       has_wiki      = true
     }
+    rfcs     = {
+      description   = "RFCs for changes to Fomantic"
+      homepage_url  = "https://fomantic.dev"
+      topics        = [
+        "fomantic-ui", "fomantic", "rfc", "rfc-process"
+      ]
+      has_downloads = false
+      has_issues    = true
+      has_projects  = false
+      has_wiki      = false
+    }
   }
 }
 
