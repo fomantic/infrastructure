@@ -13,7 +13,7 @@ jobs:
           tf_actions_version: 0.12.17
           tf_actions_subcommand: 'init'
           tf_actions_working_dir: 'root'
-          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }}'
+          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }} -var=github_token=${{ secrets.GITHUB_ORG_TOKEN }} -var=discord_github_channel_webhook=${{ secrets.DISCORD_GITHUB_CHANNEL_WEBHOOK }} -var=discord_github_admin_channel_webhook=${{ secrets.DISCORD_GITHUB_ADMIN_CHANNEL_WEBHOOK }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ATLAS_TOKEN: ${{ secrets.ATLAS_TOKEN }}
@@ -31,7 +31,7 @@ jobs:
           tf_actions_version: 0.12.17
           tf_actions_subcommand: 'plan'
           tf_actions_working_dir: 'root'
-          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }}'
+          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }} -var=github_token=${{ secrets.GITHUB_ORG_TOKEN }} -var=discord_github_channel_webhook=${{ secrets.DISCORD_GITHUB_CHANNEL_WEBHOOK }} -var=discord_github_admin_channel_webhook=${{ secrets.DISCORD_GITHUB_ADMIN_CHANNEL_WEBHOOK }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ATLAS_TOKEN: ${{ secrets.ATLAS_TOKEN }}
@@ -42,7 +42,7 @@ jobs:
           tf_actions_version: 0.12.17
           tf_actions_subcommand: 'apply'
           tf_actions_working_dir: 'root'
-          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }}'
+          args: '-var=do_token=${{ secrets.DIGITALOCEAN_TOKEN }} -var=github_token=${{ secrets.GITHUB_ORG_TOKEN }} -var=discord_github_channel_webhook=${{ secrets.DISCORD_GITHUB_CHANNEL_WEBHOOK }} -var=discord_github_admin_channel_webhook=${{ secrets.DISCORD_GITHUB_ADMIN_CHANNEL_WEBHOOK }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ATLAS_TOKEN : ${{ secrets.ATLAS_TOKEN }}
