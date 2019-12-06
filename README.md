@@ -4,17 +4,22 @@
 
 This repository contains the terraform configuration files to setup the fomantic infrastructure.
 
-> This repository is incomplete however we will continue to add to it and work towards our goal of being 100% open source.
+> This repository is incomplete because of some limitations of Terraform and our tooling however we will continue to add to this repository to complete our goal of being 100% open source.
 
 #### Infrastructure
- - [Fomantic](root/fomantic)
-   - [dns](root/fomantic/dns)
-     - [fomantic.com](root/fomantic/dns/fomantic.com.tf)
-     - [fomantic.dev](root/fomantic/dns/fomantic.dev.tf)
-     - [fomantic.org](root/fomantic/dns/fomantic.org.tf)
-     - [fomantic-ui.com](root/fomantic/dns/fomantic-ui.com.tf)
-     - [fomantic-ui.dev](root/fomantic/dns/fomantic-ui.dev.tf)
-     - [fomantic-ui.org](root/fomantic/dns/fomantic-ui.org.tf)
- - [Semantic](root/semantic) 
-   - [dns](root/semantic/dns)
-     - [semantic-ui.dev](root/fomantic/dns/semantic-ui.dev.tf)
+ - [Fomantic](modules/fomantic)
+   - [dns](modules/fomantic/dns)
+     - [fomantic.com](modules/fomantic/dns/fomantic.com.tf)
+     - [fomantic.dev](modules/fomantic/dns/fomantic.dev.tf)
+     - [fomantic.org](modules/fomantic/dns/fomantic.org.tf)
+     - [fomantic-ui.com](modules/fomantic/dns/fomantic-ui.com.tf)
+     - [fomantic-ui.dev](modules/fomantic/dns/fomantic-ui.dev.tf)
+     - [fomantic-ui.org](modules/fomantic/dns/fomantic-ui.org.tf)
+   - [github](modules/fomantic/github)
+     - [hooks](modules/fomantic/github/hooks.tf)
+     - [members](modules/fomantic/github/members.tf)
+     - [repositories](modules/fomantic/github/repositories.tf)
+     - [teams](modules/fomantic/github/teams.tf)
+ - [Semantic](modules/semantic) 
+   - [dns](modules/semantic/dns)
+     - [semantic-ui.dev](modules/semantic/dns/semantic-ui.dev.tf)
