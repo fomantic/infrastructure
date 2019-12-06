@@ -60,6 +60,7 @@ variable "github_team_repository_access" {
       create-fomantic-icons = "admin"
       branding              = "admin"
       infrastructure        = "push"
+      rfcs                  = "admin"
     }
     bots        = {
       Fomantic-UI       = "push"
