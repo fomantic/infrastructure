@@ -6,7 +6,7 @@ resource "github_repository_webhook" "discord-public" {
     content_type  = "json"
     insecure_ssl  = "0"
   }
-  events      = ["*"]
+  events      = ["issues_event", "pull_request_event", "release_event"]
 }
 
 // Webhook for admin GitHub channel for all organisation events
@@ -18,4 +18,3 @@ resource "github_organization_webhook" "discord-admin" {
   }
   events = ["*"]
 }
-
