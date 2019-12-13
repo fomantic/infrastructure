@@ -73,6 +73,7 @@ variable "github_team_repository_access" {
     maintainers = {
       Fomantic-UI       = "push"
       Fomantic-UI-Docs  = "push"
+      infrastructure    = "push"
     }
   }
 }
