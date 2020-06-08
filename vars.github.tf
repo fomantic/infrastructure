@@ -85,7 +85,7 @@ variable "github_members" {
     hammy2899   = "admin" // organisation owner
     prudho      = "member"
     ColinFrick  = "member"
-    lubber-de   = "member"
+    lubber-de   = "admin"
     exoego      = "member"
     ko2in       = "member"
 
