@@ -87,6 +87,7 @@ variable "github_members" {
     ColinFrick  = "member"
     lubber-de   = "member"
     exoego      = "member"
+    ko2in       = "member"
 
     // bots
     fomanticbot = "member"
@@ -112,6 +113,7 @@ variable "github_member_teams" {
     maintainers   = {
       hammy2899   = "maintainer"
       exoego      = "member"
+      ko2in      = "member"
     }
   }
 }
