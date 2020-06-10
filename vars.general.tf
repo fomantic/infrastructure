@@ -1,7 +1,7 @@
 variable "redirector_ip_address" {
   description = "The IP address for the redirector"
   type        = string
-  default     = "178.128.35.93"
+  default     = "165.22.95.182"
 }
 
 variable "discord_github_channel_webhook" {
