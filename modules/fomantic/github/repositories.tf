@@ -1,11 +1,11 @@
 locals {
   repos = {
     Fomantic-UI           = {
-      description   = "Fomantic-UI is a community fork of Semantic-UI"
+      description   = "Fomantic-UI is the official community fork of Semantic-UI"
       homepage_url  = "https://fomantic-ui.com"
       topics        = [
-        "ui", "css-framework", "semantic", "fork",
-        "fomantic", "fomantic-ui", "component-library"
+        "javascript", "css", "ui", "css-framework", "semantic", "fork",
+        "fomantic", "fomantic-ui", "component-library", "hacktoberfest"
       ]
       has_downloads = true
       has_issues    = true
@@ -69,7 +69,7 @@ locals {
       has_wiki      = true
     }
     create-fomantic-icons = {
-      description   = "Generate the icon.overrides and icon.html.eco files for Fomantic-UI (or Semantic-UI)"
+      description   = "Generate the icon.variables and icon.html.eco files for Fomantic-UI (or Semantic-UI)"
       homepage_url  = ""
       topics        = [
         "fomantic-ui", "semantic-ui", "fontawesome", "icons", "fomantic"
@@ -111,6 +111,17 @@ locals {
       has_issues    = true
       has_projects  = false
       has_wiki      = false
+    }
+    Fomantic-UI-vscode-snippets = {
+      description   = "Fomantic-UI Snippets for VS Code"
+      homepage_url  = ""
+      topics        = [
+        "fomantic-ui", "fomantic", "vscode", "snippets"
+      ]
+      has_downloads = true
+      has_issues    = true
+      has_projects  = true
+      has_wiki      = true
     }
   }
 }

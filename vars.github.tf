@@ -61,6 +61,7 @@ variable "github_team_repository_access" {
       branding              = "admin"
       infrastructure        = "push"
       rfcs                  = "admin"
+      Fomantic-UI-vscode-snippets = "admin"
     }
     bots        = {
       Fomantic-UI       = "push"
@@ -86,7 +87,6 @@ variable "github_members" {
     prudho      = "member"
     ColinFrick  = "member"
     lubber-de   = "admin"
-    exoego      = "member"
     ko2in       = "member"
 
     // bots
@@ -112,7 +112,6 @@ variable "github_member_teams" {
     }
     maintainers   = {
       hammy2899   = "maintainer"
-      exoego      = "member"
       ko2in      = "member"
     }
   }
