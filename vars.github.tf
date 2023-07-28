@@ -61,6 +61,7 @@ variable "github_team_repository_access" {
       branding              = "admin"
       infrastructure        = "push"
       rfcs                  = "admin"
+      Fomantic-UI-vscode-snippets = "admin"
     }
     bots        = {
       Fomantic-UI       = "push"
@@ -82,11 +83,10 @@ variable "github_members" {
   description   = "GitHub organisation members"
   type          = map(string)
   default       = {
-    hammy2899   = "admin" // organisation owner
+    y0hami      = "admin" // organisation owner
     prudho      = "member"
     ColinFrick  = "member"
     lubber-de   = "admin"
-    exoego      = "member"
     ko2in       = "member"
 
     // bots
@@ -99,7 +99,7 @@ variable "github_member_teams" {
   type        = map(map(string))
   default     = {
     admins        = {
-      hammy2899   = "maintainer"
+      y0hami      = "maintainer"
       prudho      = "member"
       ColinFrick  = "member"
       lubber-de   = "member"
@@ -108,12 +108,11 @@ variable "github_member_teams" {
       fomanticbot = "member"
     }
     helpers       = {
-      hammy2899   = "maintainer"
+      y0hami      = "maintainer"
     }
     maintainers   = {
-      hammy2899   = "maintainer"
-      exoego      = "member"
-      ko2in      = "member"
+      y0hami      = "maintainer"
+      ko2in       = "member"
     }
   }
 }
